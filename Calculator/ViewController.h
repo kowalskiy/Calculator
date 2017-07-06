@@ -10,6 +10,16 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *resultLabel;
+@property (nonatomic) int firstDigit;
+@property (nonatomic) int secondDigit;
+@property (nonatomic) BOOL typedDigit;
+@property (nonatomic, copy) NSString *currentOperation;
+
+- (IBAction)digitTapped:(UIButton *)sender;
+- (IBAction)operationButtonTapped:(UIButton *)sender;
+- (IBAction)equalsButtonTapped:(UIButton *)sender;
+- (IBAction)clearButtonTapped:(id)sender;
 
 @end
 
